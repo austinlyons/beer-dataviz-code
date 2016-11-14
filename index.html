@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Untappd Beer Data Visualization with dc.js</title>
+        <meta name="description" content="Interactive beer data visualization using dc.js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap-flex.css">
+        <link rel="stylesheet" href="css/dc.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 dc-data-count dc-chart">
+              <h1>Beer History
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="row">
+                <div class="col-xs">
+                  <h5>Year</h5>
+                  <div id="years"></div>
+                </div>
+                <div class="col-xs">
+                  <h5>Month</h5>
+                  <div id="months"></div>
+                </div>
+                <div class="col-xs">
+                  <h5>Day</h5>
+                  <div id="days"></div>
+                </div>
+              </div>
+
+              <div id="ratings"></div>
+              <div id="abvs"></div>
+              <div id="ibus"></div>
+
+            </div>
+            <div class="col-xs-12 col-md-6" id="data-count">
+              <h5>
+                Results
+                <small class="text-muted">
+                  <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
+                   <a id="all" href="#">Reset All</a>
+                  </span>
+                </small>
+              </h5>
+              <table class="table table-bordered table-striped" id="data-table">
+                <thead>
+                  <tr class="header">
+                    <th>Brewery</th>
+                    <th>Beer</th>
+                    <th>Style</th>
+                    <th>My Rating</th>
+                    <th>Community Rating</th>
+                    <th>ABV %</th>
+                    <th>IBU</th>
+                  </tr>
+                </thead>
+              </table>
+
+          </div>
+        </div>
+
+        <script type="text/javascript" src="js/lib/d3.js"></script>
+        <script type="text/javascript" src="js/lib/crossfilter.min.js"></script>
+        <script type="text/javascript" src="js/lib/dc.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
