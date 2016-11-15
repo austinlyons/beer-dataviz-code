@@ -1,3 +1,5 @@
+This code is a data viz demo that accompanies [these slides](https://github.com/austinlyons/dataviz-slides) from a talk I gave at DSM Web Geeks.
+
 ![Beer Data Viz](/beer-viz.png "Beer Data Visualization")
 
 # This repo is a  slightly pared down version of [this dc.js tutorial](https://github.com/austinlyons/dcjs-leaflet-untappd)
